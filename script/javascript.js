@@ -1,25 +1,15 @@
 console.log('HELLO');
 
 const tabellone = function (num) {
-  const numcelle = 90;
-};
-const tabellone = document.createElement('table');
+  const tombola = document.getElementById('tabellone');
+  for (let i = 1; i <= 90; i++) {
+    const casellanumeri = document.createElement('div');
+    casellanumeri.classList.add('number');
+    const valoreCasella = document.createElement('h3');
 
-let numero = 1;
-
-for (let i = 0; i < numCelle / 10; i++) {
-  const riga = document.createElement('tr');
-
-  for (let j = 0; j < 10; j++) {
-    const cella = document.createElement('td');
-    cella.textContent = numero;
-    riga.appendChild(cella);
-    numero++;
+    valoreCasella.innerText = i + 1;
+    const today = now.getdate();
+    casellanumeri.appendChild(valoreCasella);
+    tombola.appendChild(casellanumeri);
   }
-
-  tabellone.appendChild(riga);
-
-  document.body.appendChild(tabellone);
-}
-
-creaTabellone();
+};
